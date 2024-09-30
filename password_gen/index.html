@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Password generator</h3>
+    <div id="szoveg">
+        <span id="password">P4$5WOrD!</span> <!-- Jelszó tartalma id alapján elérhető -->
+        <div id="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+        </div>
+    </div>
+    <div id="tartalom">
+        <div id="char">
+            <p>Character Length</p>
+            <span id="num">0</span> <!-- A csúszka értékének megjelenítése -->
+        </div>
+        <input type="range" id="charRange" min="0" max="25" value="0">
+        <div id="list">
+            <div class="list_item">
+                <input type="checkbox" id="uppercase">
+                <p>Include Uppercase Letters</p>
+            </div>
+            <div class="list_item">
+                <input type="checkbox" id="lowercase">
+                <p>Include Lowercase Letters</p>
+            </div>
+            <div class="list_item">
+                <input type="checkbox" id="numbers">
+                <p>Include Numbers</p>
+            </div>
+            <div class="list_item">
+                <input type="checkbox" id="symbols">
+                <p>Include Symbols</p>
+            </div>
+        </div>
+        <div id="strength">
+            <span id="strength">STRENGTH</span>
+            <div id="strength_list">
+                <div class="strength"></div>
+                <div class="strength"></div>
+                <div class="strength"></div>
+                <div class="strength"></div>
+            </div>
+        </div>
+        <button id="generate">Generate</button>
+    </div>
+    <script src="password.js"></script>
+</body>
+</html>

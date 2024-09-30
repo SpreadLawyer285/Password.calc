@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-condensed{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+*{
+    font-family: "Roboto Condensed"; 
+    transition-duration: 0.5s;
+}
+
+h3{
+    color: rgb(101, 101, 101);
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+span{
+    color: rgb(101, 101, 101);
+    font-weight: bold;
+}
+
+#szoveg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    width: 300px;
+    height: 50px;
+    padding: 0px 20px;
+}
+
+#tartalom{
+    margin-top: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(43, 43, 43);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#char{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    color: rgb(248, 248, 248);
+}
+
+#copy{
+    background-color: rgb(43, 43, 43);
+    color: #bcffbc;
+}
+
+#num{
+    color: #bcffbc;
+}
+
+input[type="range"] {
+    width: 90%; /* Itt állíthatod a kívánt szélességet */
+}
+
+/* Internet Explorer / Edge */
+input[type="range"]::-ms-track {
+    background-color: #ccc;
+    height: 6px;
+    border-radius: 3px;
+}
+
+#list{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list_item{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: white;
+}
+
+#strength{
+    background-color: black;
+    height: 40px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.strength{
+    width: 5px;
+    height: 15px;
+    border: 2px solid white;
+}
+
+#strength_list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70px;
+}
+
+#generate{
+    margin-top: 20px;
+    width: 92%;
+    height: 50px;
+    background-color: #bcffbc;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+#generate:hover{
+    border: 5px solid #2c972c;
+    background-color: #4aff4a;
+}
